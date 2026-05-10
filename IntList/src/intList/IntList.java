@@ -31,7 +31,7 @@ public class IntList {
 	 * 
 	 * @post | getElements().length == old(getElements()).length + 1
 	 * @post | IntStream.range(0, old(getElements()).length).allMatch(i -> getElements()[i] == old(getElements())[i]) 
-	 * 			&& getElements()[old(getElements()).length +1] == e
+	 * 			&& getElements()[old(getElements()).length] == e
 	 */
 	public void addElement(int e) {
 		int[] newElements = new int[this.intList.length + 1];
